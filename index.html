@@ -1,9 +1,20 @@
+<!-- 
+  What is the difference between an adaptive website and a fully responsive website?
+    An adaptive website needs to load ALL possible layouts while responsive websites only need to load the one that works across all platforms.
+  Describe what it means to be mobile first vs desktop first.
+    Mobile first starts with mobile sizes and then adjusts for larger styles, desktop is the opposite
+  What does font-size: 62.5% in the html tag do for us when using rem units?
+    Makes the default rem smaller
+  How would you describe preprocessing to someone new to CSS? 
+    It allows you to write CSS the way it should be!
+-->
+    
 <!doctype html>
 
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SpaceWalkers</title>
 
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
@@ -16,7 +27,20 @@
 
 <body>
 
- <!-- navigation code here -->
+<!-- navigation code here -->
+<div class="nav">
+  <h2>SpaceWalkers</h2>
+  <nav>
+    <li><a href="">Home</a></li>
+    <li><a href="">About Us</a></li>
+    <li><a href="">Blog</a></li>
+    <li><a href="">Contact</a></li>
+    <li><a href="">Sign In</a></li>
+  </nav>
+</div>
+<div class="hero">
+  <img src="img/main-header.png" class="heroImage" alt="Rocket blasting off">
+</div>
 
   <div class="container home">
 
@@ -26,6 +50,7 @@
       <h2>Lift Off</h2>
     
       <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would fall apart. Seeing this has to change a man.</p>
+      <img src="img/blast.png" class="blastMobile" alt="Rocket blasting off">
     </header>
 
     <section class="space-images">
@@ -41,16 +66,17 @@
       <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet.</p>
     
       <p>Which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it.</p>
+      
     </section>
     
     <section class="walk">
       <div class="walk-text">
+        <img src="img/space-walk.png" class="blastMobile" alt="Space walking astronaut">
         <h3>Let's Go For A Walk</h3>
 
         <p>The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round.</p>
       
-        <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
-      
+        <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>        
         <div class="btn">
           Sign Up
         </div>
